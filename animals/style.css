@@ -1,0 +1,43 @@
+p,h1 {
+    margin: initial;
+}
+
+img {
+    vertical-align: top; /*display: block;가능하긴 함 */
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+
+.contents {
+    background-color: #93572e;
+    padding: 0 20px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom: 10px solid #4a260b;
+}
+
+h1 {
+    color: white;
+    padding-top: 5px;
+    margin: 0px;
+    margin-bottom: 10px;
+    /* background-color: lightpink; */   /*공간 확인용*/
+}
+
+p {
+    color: #cfb5a5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+    /* background-color: lightgreen; */  /*공간 확인용*/
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding: 150px;
+}
+
