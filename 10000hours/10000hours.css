@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    background-color: #5B2386;
+    font-family: 'GmarketSansMedium';
+}
+
+.wrapper {
+    /* width: fit-content; */
+    margin: 0 auto;
+}
+
+header {
+    /* background-color: aqua; */
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 225px;
+    margin: 145px auto 66px auto;
+}
+
+.title {
+    /* background-color: blue; */
+    display: block;
+    width: 564px;
+    height: 112px;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+}
+
+.sub-title {
+    /* background-color: beige; */
+    display: block;
+    margin: 0 auto 78px auto;
+}
+
+p.description {
+    /* background-color: lightcoral; */
+    display: block;
+    margin: 0 auto 102px auto;
+    background-image: url(/img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    width: 493px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+}
+
+.strong-description {
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+.input-form {
+    /* background-color: lightsalmon; */
+    text-align: center;
+    line-height: 24px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 115px;
+}
+
+input.expert {
+    /* background-color: aqua; */
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    border: transparent;
+    margin-bottom: 27px;
+    text-align: center;
+    font-size: 24px;
+    color: #BABCBE;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+input.time {
+    /* background-color: lightskyblue; */
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    border: transparent;
+    text-align: center;
+    font-size: 24px;
+    color: #BABCBE;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+button.btn-time {
+    display: block;
+    background-color: #FCEE21;
+    margin: 0 auto;
+    width: 565px;
+    height: 66px;
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: 700;
+    color: #5B2386;
+    line-height: 24px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.btn-wrapper {
+    /* background-color: antiquewhite; */
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 147px auto;
+}
+
+.click {
+    /* background-color: aqua; */
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 572px;
+}
+
+.output-form {
+    /* background-color: lightsalmon; */
+    text-align: center;
+    line-height: 24px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 127px;   
+}
+
+.output {
+    /* background-color: lightpink; */
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    vertical-align:-25%;
+}
+
+.btn-modal {
+    /* background-color: lightcoral; */
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.btn-training {
+    display: inline-block;
+    background-color: #FCEE21;
+    margin: 0 auto;
+    width: 356px;
+    height: 66px;
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: 700;
+    color: #5B2386;
+    line-height: 24px;
+    cursor: pointer;
+    border: transparent;
+    margin-right: 18px;
+}
+
+.btn-share {
+    display: inline-block;
+    background-color: white;
+    margin: 0 auto;
+    width: 191px;
+    height: 66px;
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: 700;
+    color: #5B2386;
+    line-height: 24px;
+    cursor: pointer;
+    border: transparent;
+}
+
+footer img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+small {
+    font-family: 'Noto Sans KR';
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+/* modal */
+.modal {
+    background-color: white;
+    width: 800px;
+    height: 656px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding-top: 76px;
+    padding-bottom: 68px;
+}
+
+.img-fighting {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+.img-dream {
+    display: block;
+    margin: 0 auto 29px auto;
+}
+
+.img-licat {
+    display: block;
+    margin: 0 auto 74px auto;
+}
+
+.btn-real-training {
+    display:block;
+    background-color: #FCEE21;
+    margin: 0 auto;
+    width: 508px;
+    height: 66px;
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: 700;
+    color: #5B2386;
+    line-height: 24px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.screen-out {
+    display: none;
+}
