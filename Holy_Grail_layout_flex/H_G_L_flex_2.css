@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid #466FA6;
+}
+
+header  {
+    background-color: #96c9f2;
+    color: white;
+    width: 100%;
+    border-bottom: 5px solid #466FA6;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    background-color: #c7f544;
+    color: black;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: #485373;
+    color: white;
+    width: 40%;
+    box-sizing: border-box;
+    border-left: 5px solid #466FA6;
+    border-right: 5px solid #466FA6;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #ff7769;
+    color: white;
+    width: 100%;
+    border-top: 5px solid #466FA6;
+    display: flex;
+    justify-content: center;
+}
+
