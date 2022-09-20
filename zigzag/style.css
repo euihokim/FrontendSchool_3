@@ -1,8 +1,146 @@
 :root {
     font-family: 'Montserrat', sans-serif;
-	/*
-	font-weight: 500;
-	font-weight: 700;
-	*/
+	
+	/* font-weight: 500;
+	font-weight: 700; */
+	
 }
 
+body {
+	background-color: #51318b;
+}
+
+/* header */
+.wrapper-title {
+	display: flex;
+	max-width: 1080px;
+	margin: 100px auto;
+}
+
+header h1 {
+	font-size: 40px;
+	color: white;
+	padding-right: 30px;
+	font-weight: 500;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+header h1 .highlight {
+	display: block;
+	box-shadow: inset 0 -20px 0 orangered;
+	line-height: 1.2;
+	width: fit-content;
+}
+
+.description::before {
+	display: inline-block;
+	content:"";
+	width: 280px;
+	height: 2px;
+	margin-right: 23px;
+	background-color: #a887e1;
+	}
+
+.description {
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 500;
+	color: #a887e1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 550px;
+}
+
+/* main */
+.wrapper-item {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	max-width: 1080px;
+	margin: 100px auto;
+}
+
+.item {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+}
+
+.item:nth-child(even) {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+main h2 {
+	font-size: 30px;
+}
+
+.bg-rest {
+	background-image: url(images/photo01.png);
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	background-size: cover;
+	width: 281px;
+	height: auto;
+}
+
+.bg-craft {
+	background-image: url(images/photo02.png);
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	background-size: cover;
+	width: 281px;
+	height: auto;
+}
+
+.bg-scrap {
+	background-image: url(images/photo03.png);
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	background-size: cover;
+	width: 281px;
+	height: auto;
+}
+
+.cover {
+	background-color: rgba(81, 49, 139, 0.5);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper-list {
+	padding: 24px;
+}
+
+main h3 {
+	font-size: 18px;
+	color: #51318b;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+ul li {
+	line-height: 2;
+	font-size: 14px;
+}
+
+.wrapper-list li::before {
+	content: "";
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bc8ee8;
+    border-radius: 50%;
+    margin-right: 10px;
+}
