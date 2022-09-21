@@ -1,0 +1,43 @@
+body {
+    background-color:beige;
+
+}
+
+strong {
+    color:#eff;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-main {
+    display: flex;
+}
+
+.header {
+    background-color: #96c9f2;
+}
+
+.item:nth-child(2) {
+    order: +1;
+}
+
+.aside {
+    background-color: #c7f544;
+    flex-grow: 1;
+}
+
+.section {
+    background-color: #485373;
+    flex-grow: 2;
+}
+
+.footer {
+    background-color: #ff7769;
+
+}
