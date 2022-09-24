@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vending machine</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="vending_machine.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="logo">
+            <h1 class="screen-out">ColaCola</h1>
+            <img class="img-logo" src="./images/logo.svg" alt="ColaCola">
+        </header>
+        <div class="wrapper-section">
+            <section class="left-section">
+                <h2 class="screen-out">음료 리스트와 현황</h2>
+                <ul class="items">
+                    <li><img class="item" src="./images/original_cola.svg" alt=""></li>
+                    <li class="sold-out"><img class="item" src="./images/violet_cola.svg" alt="">
+                    <img class="item" src="./images/sold_out.svg" alt=""></li>
+                    <li><img class="item" src="./images/yellow_cola.svg" alt=""></li>
+                    <li><img class="item" src="./images/cool_cola.svg" alt=""></li>
+                    <li><img class="item" src="./images/green_cola.svg" alt=""></li>
+                    <li><img class="item" src="./images/orange_cola.svg" alt=""></li>
+                </ul>
+                <form class="form" action="#">
+                    <div class="wrapper-info">
+                        <output class="balance">잔액 :</output>
+                        <input class="input-deposit" type="text" placeholder="입금액 입력">
+                        <div class="selected-items">
+                            <ul>
+                                <li>
+                                    <figure class="selected-item">
+                                        <img src="./images/selected_original_cola.svg" alt="">
+                                        <figcaption class="item-name">
+                                            Origianl_Cola
+                                        </figcaption>
+                                        <div class="pcs">1</div>
+                                    </figure>
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn">
+                        <button class="btn return">거스름돈 반환</button>
+                        <button class="btn deposit">입금</button>
+                        <button class="btn get">획득</button>
+                    </div>
+                </form>
+            </section>     
+            <section class="right-section">
+                <h2 class="screen-out">소지금과 획득한 음료</h2>
+                <div class="my-pocket">소지금:</div>
+                ...
+            </section>
+        </div>
+    </div>
+</body>
+</html>
