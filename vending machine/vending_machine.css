@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&family=Qwitcher+Grypen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500;700&family=Qwitcher+Grypen&display=swap');
+
+.screen-out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+body {
+    background-color: #EAE8FE;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* .wrapper {
+    background-color: lightcoral;
+} */
+
+header {
+    background-color: lightcyan;
+    margin-bottom: 67px;
+}
+
+.logo {
+    /* background-color: blue; */
+    text-align: center;
+
+}
+
+.img-logo {
+    /* background-color: aquamarine; */
+    width: 386px;
+    height: 180px;
+    vertical-align: top;
+}
+
+.wrapper-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    justify-content: center;
+}
+
+.left-section {
+    background-color: white;
+    max-width: 360px;
+    flex-basis: 360px;
+    flex-grow: 1;
+    padding: 31px 27px 28px 27px;
+    box-sizing: border-box;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+li.sold-out {
+    position: relative;
+}
+
+li img:nth-child(2) {
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+}
+
+.my-pocket {
+    background-color: lightseagreen;
+}
+
+.right-section {
+    background-color: lightgreen;
+}
+
+img.item {
+    vertical-align: top;
+    width: 94px;
+    height: 130px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    gap: 12px;
+}
+
+.wrapper-info {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.balance {
+    display: block;
+    box-sizing: border-box;
+    background-color: #EAE8FE;
+    width: 200px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.input-deposit {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    height: 33px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 6px;
+    
+}
+
+.wrapper-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.btn {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 33px;
+    background-color: #FFFFFF;
+    border: transparent;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.btn.get {
+    height: 106px;
+    background-color: #6327FE;
+    color: white;
+}
+
+/* li:hover {
+    box-sizing: border-box;
+    border: 3px solid #6327FE;
+    border-radius: 10px;
+} */
+
+.selected-items {
+    background-color: #EAE8FE;
+    width: 200px;
+    height: 106px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    overflow: scroll;
+    padding: 12px 0 0 12px;
+    box-sizing: border-box;
+}
+
+.selected-items::-webkit-scrollbar {
+    width: 12px;
+    height: 0;
+}
+.selected-items::-webkit-scrollbar-thumb {
+    height: 79px;
+    background-color: white;
+    border-radius: 50px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+.selected-items::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+.selected-item {
+    width: 170px;
+    height: 46px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+figcaption.item-name {
+    /* background-color: #6327FE; */
+    margin-left: 10px;
+    font-size: 9px;
+}
+
+.pcs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 28px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.right-section {
+    background-color: white;
+    max-width: 360px;
+    flex-basis: 360px;
+    flex-grow: 1;
+    padding: 31px 27px 28px 27px;
+    box-sizing: border-box;
+}
+
