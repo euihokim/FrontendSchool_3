@@ -15,7 +15,7 @@
             <img class="img-logo" src="./images/logo.svg" alt="ColaCola">
         </header>
         <div class="wrapper-section">
-            <section class="left-section">
+            <section class="container-items">
                 <h2 class="screen-out">음료 리스트와 현황</h2>
                 <ul class="items">
                     <li><img class="item" src="./images/original_cola.svg" alt=""></li>
@@ -25,24 +25,30 @@
                     <li><img class="item" src="./images/cool_cola.svg" alt=""></li>
                     <li><img class="item" src="./images/green_cola.svg" alt=""></li>
                     <li><img class="item" src="./images/orange_cola.svg" alt=""></li>
-                </ul>
+                    </ul>
                 <form class="form" action="#">
                     <div class="wrapper-info">
                         <output class="balance">잔액 :</output>
                         <input class="input-deposit" type="text" placeholder="입금액 입력">
-                        <div class="selected-items">
-                            <ul>
+                        <div class="wrapper-selected-items">
+                            <ul class="selected-items">
                                 <li>
-                                    <figure class="selected-item">
-                                        <img src="./images/selected_original_cola.svg" alt="">
-                                        <figcaption class="item-name">
+                                    <div class="selected-item">
+                                        <img src="./images/small_original_cola.svg" alt="">
+                                        <span class="item-name">
                                             Origianl_Cola
-                                        </figcaption>
-                                        <div class="pcs">1</div>
-                                    </figure>
+                                        </span>
+                                        <span class="pcs">1</span>
+                                    </div>
                                 </li>
                                 <li>
-
+                                    <div class="selected-item">
+                                        <img src="./images/small_green_cola.svg" alt="">
+                                        <span class="item-name">
+                                            Green_Cola
+                                        </span>
+                                        <span class="pcs">2</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -54,11 +60,55 @@
                     </div>
                 </form>
             </section>     
-            <section class="right-section">
-                <h2 class="screen-out">소지금과 획득한 음료</h2>
-                <div class="my-pocket">소지금:</div>
-                ...
-            </section>
+            <div class="right-section">
+                <div class="wrapper-">
+                    <div class="my-pocket">
+                        소지금:<span class="f-w-700">25,000 원</span>
+                    </div>
+                    <section class="container-get-items">
+                        <h2 class="f-w-700">획득한 음료</h2>
+                        <ul class="get-items">
+                            <li>
+                                <div class="get-item">
+                                    <img src="./images/small_original_cola.svg" alt="">
+                                    <span class="item-name">
+                                        Original_Cola
+                                    </span>
+                                    <span class="pcs">1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="get-item">
+                                    <img src="./images/small_green_cola.svg" alt="">
+                                    <span class="item-name">
+                                        Green_Cola
+                                    </span>
+                                    <span class="pcs">2</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="get-item">
+                                    <img src="./images/small_orange_cola.svg" alt="">
+                                    <span class="item-name">
+                                        Orange_Cola
+                                    </span>
+                                    <span class="pcs">1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="get-item">
+                                    <img src="./images/small_violet_cola.svg" alt="">
+                                    <span class="item-name">
+                                        Violet_Cola
+                                    </span>
+                                    <span class="pcs">5</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="total">총금액 : 9,000 원</span>
+                    </section>  
+                </div>
+            </div>
         </div>
     </div>
 </body>
