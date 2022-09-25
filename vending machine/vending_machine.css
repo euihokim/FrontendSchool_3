@@ -92,7 +92,6 @@ img.item {
 }
 
 .balance {
-    display: block;
     box-sizing: border-box;
     background-color: #EAE8FE;
     width: 200px;
@@ -208,7 +207,7 @@ span.item-name {
     right: 8px;
 }
 
-.right-section {
+.container-info {
     background-color: white;
     max-width: 360px;
     flex-basis: 360px;
