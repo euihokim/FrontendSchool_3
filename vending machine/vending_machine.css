@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&family=Qwitcher+Grypen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&family=Qwitcher+Grypen&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500;700&family=Qwitcher+Grypen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500;700&family=Qwitcher+Grypen&display=swap");
 
 .screen-out {
     overflow: hidden;
@@ -12,8 +12,8 @@
 }
 
 body {
-    background-color: #EAE8FE;
-    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #eae8fe;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 /* .wrapper {
@@ -26,7 +26,6 @@ header {
 
 .logo {
     text-align: center;
-
 }
 
 .img-logo {
@@ -93,7 +92,7 @@ img.item {
 
 .balance {
     box-sizing: border-box;
-    background-color: #EAE8FE;
+    background-color: #eae8fe;
     width: 200px;
     height: 33px;
     display: flex;
@@ -104,12 +103,12 @@ img.item {
 
 .input-deposit {
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
+    background-color: #ffffff;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     width: 200px;
     height: 33px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     padding-left: 6px;
 }
 
@@ -121,9 +120,9 @@ img.item {
 
 .btn {
     display: block;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     height: 33px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: transparent;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
     border-radius: 5px;
@@ -133,12 +132,12 @@ img.item {
 
 .btn.get {
     height: 106px;
-    background-color: #6327FE;
+    background-color: #6327fe;
     color: white;
 }
 
 li .item:hover {
-    outline: 3px solid  #6327FE;
+    outline: 3px solid #6327fe;
     border-radius: 10px;
 }
 
@@ -150,17 +149,17 @@ li .item:hover {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    background-color: #EAE8FE;
+    background-color: #eae8fe;
     width: 200px;
     height: 106px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     overflow-y: scroll;
     padding: 12px 0 0 12px;
     box-sizing: border-box;
 }
 
-.selected-items::-webkit-scrollbar{
+.selected-items::-webkit-scrollbar {
     width: 11px;
     height: 0;
 }
@@ -199,7 +198,7 @@ span.item-name {
     width: 30px;
     height: 30px;
     margin-left: 28px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
@@ -221,7 +220,7 @@ span.item-name {
     justify-content: space-between;
     padding: 6px 10px;
     box-sizing: border-box;
-    background-color: #EAE8FE;
+    background-color: #eae8fe;
     height: 32px;
     margin: 9px 27px;
     border-radius: 5px;
@@ -230,7 +229,7 @@ span.item-name {
 .container-get-items {
     height: 474px;
     background-color: white;
-    border-top: 20px solid #EAE8FE;
+    border-top: 20px solid #eae8fe;
     padding: 0 27px;
 }
 
@@ -249,8 +248,8 @@ h2.f-w-700 {
     flex-direction: column;
     justify-content: flex-start;
     box-sizing: border-box;
-    background-color:#EAE8FE;
-    border: 1px solid #BDBDBD;
+    background-color: #eae8fe;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     height: 364px;
     padding: 11px;
@@ -264,13 +263,13 @@ h2.f-w-700 {
     box-sizing: border-box;
     position: relative;
     padding: 0 8px 0 10px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 276px;
     height: 46px;
     border-radius: 5px;
 }
 
-.get-items::-webkit-scrollbar{
+.get-items::-webkit-scrollbar {
     width: 11px;
     height: 0;
 }
@@ -293,15 +292,29 @@ h2.f-w-700 {
 }
 
 /* 스크롤 고정*/
-.selected-items::after{
+.selected-items::after {
     content: " ";
     display: block;
     border: 20px solid transparent;
-
 }
 
-.get-items::after{
+.get-items::after {
     content: " ";
     display: block;
     border: 500px solid transparent;
+}
+
+@media screen and (max-width: 747px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .img-logo {
+        width: 166px;
+        height: 78px;
+    }
+
+    .container-get-items {
+        border-top: 5px solid white;
+    }
 }
