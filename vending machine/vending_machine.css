@@ -57,26 +57,54 @@ header {
     margin-bottom: 20px;
 }
 
+.btn-item {
+    background-color: white;
+    vertical-align: top;
+    width: 94px;
+    height: 130px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    font-family: "Noto Sans KR";
+}
+
 li.sold-out {
     position: relative;
     pointer-events: none;
 }
 
-li img:nth-child(2) {
+li > img {
     position: absolute;
-    opacity: 0.8;
     border-radius: 10px;
     left: 0;
     right: 0;
 }
 
 img.item {
-    vertical-align: top;
-    width: 94px;
-    height: 130px;
+    width: 36px;
+    height: 65px;
+    margin: 5px 0 2px 0;
     cursor: pointer;
-    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
-    border-radius: 10px;
+}
+
+.name-item {
+    font-family: "Noto Sans KR";
+    display: block;
+    font-size: 9px;
+    line-height: 10px;
+    margin-bottom: 7px;
+}
+
+.price-item {
+    font-family: "Noto Sans KR";
+    display: block;
+    line-height: 22px;
+    background: #6327fe;
+    border-radius: 50px;
+    font-size: 12px;
+    width: 70px;
+    height: 22px;
+    margin: 0 auto;
+    color: white;
 }
 
 .form {
@@ -136,7 +164,7 @@ img.item {
     color: white;
 }
 
-li .item:hover {
+li .btn-item:hover {
     outline: 3px solid #6327fe;
     border-radius: 10px;
 }
@@ -304,11 +332,11 @@ h2.f-w-700 {
     border: 500px solid transparent;
 }
 
-@media screen and (max-width: 747px) {
-    body::-webkit-scrollbar {
-        display: none;
-    }
+body::-webkit-scrollbar {
+    display: none;
+}
 
+@media screen and (max-width: 747px) {
     .img-logo {
         width: 166px;
         height: 78px;
