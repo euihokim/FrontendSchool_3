@@ -1,0 +1,49 @@
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+/* design */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+}
+
+.chipmunk {
+    position: relative;
+    margin: 200px auto;
+    width: 400px;
+    height: 380px;
+    background-color: white;
+}
+
+.ear.left {
+    position: absolute;
+    left: 80px;
+    width: 70px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.ear.right {
+    position: absolute;
+    left: 250px;
+    width: 70px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+.face {
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    height: 330px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+}
