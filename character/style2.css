@@ -1,0 +1,226 @@
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+/* design */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+@keyframes face {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: rotate(-5deg) translatey(2px);
+    }
+}
+
+/* @keyframes mask {
+    from {
+        transform: translate();
+    }
+
+    to {
+        left: 30px;
+        width: 340px;
+        height: 120px;
+        transform: rotate(0deg) translatey(80px);
+    }
+} */
+
+@keyframes eye-right {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: scale(2, 0.2) translatey(2px);
+    }
+}
+@keyframes eye-left {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: scale(2, 0.2) translatey(2px);
+    }
+}
+
+@keyframes sleep {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: rotate(-10deg) translatey(-50px);
+    }
+}
+
+@keyframes saliva {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: rotate(-10deg) translatey(5px);
+    }
+}
+
+.penguin {
+    position: relative;
+    margin: 200px auto;
+    width: 400px;
+    height: 400px;
+}
+
+.skin-left {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    width: 175px;
+    height: 235px;
+    background-color: white;
+    border-radius: 50%;
+    /* transform: rotate(10deg); */
+}
+.skin-right {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    width: 175px;
+    height: 235px;
+    background-color: white;
+    border-radius: 50%;
+    /* transform: rotate(-10deg); */
+}
+
+.skin-center {
+    position: absolute;
+    top: 205px;
+    left: 40px;
+    width: 320px;
+    height: 115px;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 0;
+}
+
+.mask {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    width: 360px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid gray;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 100;
+    animation: mask 3s infinite alternate;
+}
+
+.mask:hover {
+    left: 30px;
+    width: 340px;
+    height: 120px;
+    transform: translateY(80px);
+    transition: 3s;
+}
+
+.mask-name {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-family: sans-serif;
+    font-size: 6px;
+    transform: rotate(-30deg);
+}
+
+.face {
+    position: absolute;
+    top: 30px;
+    width: 400px;
+    height: 340px;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border: 1px solid transparent;
+    animation: face 3s infinite alternate-reverse;
+}
+
+.eye.left {
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    width: 30px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 30;
+    animation: eye-left 3s infinite alternate-reverse;
+}
+
+.eye.right {
+    position: absolute;
+    top: 150px;
+    right: 110px;
+    width: 30px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 30;
+    animation: eye-right 3s infinite alternate-reverse;
+}
+
+.mouth {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    width: 140px;
+    height: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: orange;
+    z-index: 20;
+    border: 20px solid black;
+}
+
+.sleep {
+    position: absolute;
+    left: 5px;
+    font-size: 50px;
+    animation: sleep 3s infinite alternate;
+}
+
+.saliva {
+    position: absolute;
+    top: 245px;
+    left: 230px;
+    width: 15px;
+    height: 50px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    z-index: 50;
+    animation: saliva 3s infinite alternate;
+}
