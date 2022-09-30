@@ -107,6 +107,11 @@ img.item {
     color: white;
 }
 
+.price-item::after {
+    content: "원";
+    font-size: 12px;
+}
+
 .form {
     display: flex;
     gap: 12px;
@@ -125,8 +130,14 @@ img.item {
     height: 33px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 5px;
-    padding-left: 10px;
+    padding: 0 10px;
+}
+
+.balance::after {
+    content: "원";
+    font-size: 14px;
 }
 
 .input-deposit {
@@ -254,6 +265,13 @@ span.item-name {
     border-radius: 5px;
 }
 
+.my-pocket .f-w-700::after {
+    content: " 원";
+    font-size: 14px;
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+}
+
 .container-get-items {
     height: 474px;
     background-color: white;
@@ -316,6 +334,11 @@ h2.f-w-700 {
     display: block;
     text-align: right;
     margin-top: 12px;
+    font-size: 12px;
+}
+
+.total::after {
+    content: " 원";
     font-size: 12px;
 }
 
