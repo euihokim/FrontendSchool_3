@@ -8,12 +8,27 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <div class="flex m-12">
-            <div class="w-1/4">
-                <img class="rounded-full" src="./images/profile.jpg" alt="" />
-            </div>
-            <div class="w-2/4 ml-12 text-4xl lg:text-6xl text-[#876]">
-                <h2>김의호</h2>
+        <div class="container m-12">
+            <div class="flex">
+                <h1 class="sr-only">이력서</h1>
+                <header class="flex flex-wrap">
+                    <img
+                        class="flex rounded-full lg:w-1/4 h-40 w-40 lg:w-60 lg:h-60"
+                        src="./images/profile.jpg"
+                        alt="이력서 사진"
+                    />
+                    <div class="flex lg:w-3/4">
+                        <h2 class="lg:w-1/4 text-4xl lg:text-6xl ml-12">
+                            김의호
+                        </h2>
+                        <div class="ml-20 lg:w-3/4">
+                            <p>Email kim-eh@naver.com</p>
+                            <p>Phone 000-0000-0000</p>
+                            <p>https://github.com/euihokim</p>
+                            <p>https://velog.io/@ho_it</p>
+                        </div>
+                    </div>
+                </header>
             </div>
         </div>
     </body>
