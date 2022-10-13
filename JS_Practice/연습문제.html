@@ -67,10 +67,31 @@
             // 정답 : 17
 
             // 4-1 반복문만 사용하여 숫자단위 콤마 찍기
+
             // 4-2 반복문만 사용하여 숫자단위 콤마 없애기
+
             // 4-3 문자열 뒤집기
+            let str1 = "hello world";
+            let str2 = str1.split("");
+            let str3 = [];
+            while (str3.length <= str1.length - 1) {
+                str3.push(str2.pop());
+            }
+            console.log(str3.join(""));
 
             // 5 로또번호를 추첨하는 코드를 작성해주세요.
+            let lotto = [];
+            while (lotto.length < 6) {
+                let num = parseInt(Math.random() * 45 + 1);
+                if (lotto.indexOf(num) === -1) {
+                    lotto.push(num);
+                }
+            }
+            console.log(
+                lotto.sort(function (a, b) {
+                    return a - b;
+                })
+            );
         </script>
     </body>
 </html>
