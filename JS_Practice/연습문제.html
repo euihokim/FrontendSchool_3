@@ -67,9 +67,15 @@
             // 정답 : 17
 
             // 4-1 반복문만 사용하여 숫자단위 콤마 찍기
+            let str4 = "1000000";
 
+            for (let i = str4.length - 3; i > 0; i -= 3)
+                str4 = str4.slice(0, i) + "," + str4.slice(i);
             // 4-2 반복문만 사용하여 숫자단위 콤마 없애기
-
+            let str5 = "1,000,000";
+            for (let i = str5.length - 4; i > 0; i -= 4) {
+                str5 = str5.slice(0, i) + str5.slice(i + 1);
+            }
             // 4-3 문자열 뒤집기
             let str1 = "hello world";
             let str2 = str1.split("");
