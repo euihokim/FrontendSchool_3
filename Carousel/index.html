@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>월드컵 Groups</title>
+        <title>WORLD CUP QATAR 2022</title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -16,54 +16,63 @@
                 <ul class="list-item">
                     <li>
                         <p>Group A</p>
-                        <img src="./images/Groups/a.jpg" alt="" />
+                        <img src="./images/Groups/a.jpg" alt="a조" />
                     </li>
                     <li>
                         <p>Group B</p>
-                        <img src="./images/Groups/b.jpg" alt="" />
+                        <img src="./images/Groups/b.jpg" alt="b조" />
                     </li>
                     <li>
                         <p>Group C</p>
-                        <img src="./images/Groups/c.jpg" alt="" />
+                        <img src="./images/Groups/c.jpg" alt="c조" />
                     </li>
                     <li>
                         <p>Group D</p>
-                        <img src="./images/Groups/d.jpg" alt="" />
+                        <img src="./images/Groups/d.jpg" alt="d조" />
                     </li>
                     <li>
                         <p>Group E</p>
-                        <img src="./images/Groups/e.jpg" alt="" />
+                        <img src="./images/Groups/e.jpg" alt="e조" />
                     </li>
                     <li>
                         <p>Group F</p>
-                        <img src="./images/Groups/f.jpg" alt="" />
+                        <img src="./images/Groups/f.jpg" alt="f조" />
                     </li>
                     <li>
                         <p>Group G</p>
-                        <img src="./images/Groups/g.jpg" alt="" />
+                        <img src="./images/Groups/g.jpg" alt="g조" />
                     </li>
                     <li>
                         <p>Group H</p>
-                        <img src="./images/Groups/h.jpg" alt="" />
+                        <a href="#G-H"
+                            ><img src="./images/Groups/h.jpg" alt="h조"
+                        /></a>
                     </li>
                 </ul>
                 <button class="btn2-prev"><</button>
                 <button class="btn2-next">></button>
             </section>
             <section class="group-h">
-                <h2>Group H</h2>
-                <ul class="list-item2">
-                    <li class="item2">
-                        <img src="./images/Group-H/pt.png" alt="" />
+                <h2 id="G-H">Group H</h2>
+                <ul class="list-group-item">
+                    <li class="group-item">
+                        <img
+                            src="./images/Group-H/pt.png"
+                            alt="포르투갈 국기"
+                        />
+                        <!-- <div class="back">Portugal</div> -->
                     </li>
-                    <li class="item2">
-                        <img src="./images/Group-H/gh.png" alt="" />
+                    <li class="group-item">
+                        <img src="./images/Group-H/gh.png" alt="가나 국기" />
                     </li>
-                    <li class="item2">
-                        <img src="./images/Group-H/uy.png" alt="" />
+                    <li class="group-item">
+                        <img
+                            src="./images/Group-H/uy.png"
+                            alt="우루과이 국기"
+                        />
                     </li>
-                    <li class="item2">
-                        <img src="./images/Group-H/kr.png" alt="" />
+                    <li class="group-item">
+                        <img src="./images/Group-H/kr.png" alt="태극기" />
                     </li>
                 </ul>
                 <button class="btn-prev"><</button>
@@ -92,10 +101,10 @@
                 }
                 center.style.transform = `translate(0,0) rotateY(${currAngle}deg)`;
             });
-            // 아래
+            // Group H
             const prev = document.querySelector(".btn-prev");
             const next = document.querySelector(".btn-next");
-            const item = document.querySelector(".list-item2");
+            const item = document.querySelector(".list-group-item");
             let currPosition = 0;
 
             next.addEventListener("click", function (e) {
