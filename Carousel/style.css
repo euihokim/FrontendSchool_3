@@ -164,7 +164,8 @@ h2 {
 .group-item {
     float: left;
     position: relative;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
+    perspective: 800px;
     transition: 0.4s;
 }
 
@@ -178,18 +179,36 @@ h2 {
     transform: rotateY(180deg);
 } */
 
-/* .back {
-    position: absolute;
-    color: white;
-    background-color: lightpink;
+/*webkit을 사용해야지 사파리에서도 정상적으로 동작*/
+.card {
     width: 320px;
-    height: 100%;
-    top: 0;
+    height: 210px;
+    backface-visibility: hidden; /*뒷면 숨기기*/
+    visibility: visible;
+    transition: ease-in-out 1s;
+    border-radius: 5%;
+}
+
+.front {
+    position: absolute;
+    background: blanchedalmond;
+    transform: rotateY(0deg);
+}
+
+.back {
+    background: #eaeaed;
+    transform: rotateY(180deg);
     text-align: center;
-    line-height: 213px;
-    transform: rotateY(-180deg);
-    backface-visibility: hidden;
-} */
+    line-height: 210px;
+}
+
+.group-item:hover .front {
+    transform: rotateY(-180deg); /*y축을 기준으로 180도까지회전*/
+}
+
+.group-item:hover .back {
+    transform: rotateY(0deg); /*y축을 기준으로 0도 까지회전*/
+}
 
 .btn-prev {
     position: absolute;
@@ -206,6 +225,7 @@ h2 {
     opacity: 0.6;
     cursor: pointer;
     border-color: transparent;
+    cursor: url(./images/cursor.png) 20 20, auto;
 }
 .btn-next {
     position: absolute;
@@ -222,6 +242,7 @@ h2 {
     opacity: 0.6;
     cursor: pointer;
     border-color: transparent;
+    cursor: url(./images/cursor.png) 20 20, auto;
 }
 
 .screen-out {
